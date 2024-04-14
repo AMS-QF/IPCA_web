@@ -87,14 +87,16 @@
         }
       .graph-container {
     display: flex;
-    justify-content: space-around; /* 그래프 사이의 공간을 균등하게 분배 */
+    flex-direction: column; /* 그래프를 수직으로 쌓음 */
+    align-items: center; /* 중앙 정렬 */
     margin-top: 20px;
+    background-color: #f0f0f0; /* 각 그래프의 배경만 옅은 회색 */    
 }
 
 .graph {
     border: 1px solid #ccc; /* 그래프 주변에 경계선 추가 */
     padding: 15px;
-    background-color: #f0f0f0; /* 각 그래프의 배경만 옅은 회색 */
+    
 }
       </style>
 </head>

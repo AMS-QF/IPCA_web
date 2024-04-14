@@ -85,6 +85,17 @@
         justify-self: center; /* 가운데 정렬 */
         max-width: 50%; /* 다른 요소와 동일한 크기로 설정 */
         }
+      .graph-container {
+    display: flex;
+    justify-content: space-around; /* 그래프 사이의 공간을 균등하게 분배 */
+    margin-top: 20px;
+}
+
+.graph {
+    border: 1px solid #ccc; /* 그래프 주변에 경계선 추가 */
+    padding: 15px;
+    background-color: #f0f0f0; /* 각 그래프의 배경만 옅은 회색 */
+}
       </style>
 </head>
   
@@ -185,7 +196,7 @@
         </div>
         <div class="graph">
             <figure>
-                <img src="static/images/paper/monthly_ret.png" alt="Monthly Return">
+                <img src="static/images/paper/monthly ret.png" alt="Monthly Return">
                 <figcaption>Monthly Ret.: PCA max SR + l<sub>1</sub> + l<sub>2</sub><sup>2</sup></figcaption>
             </figure>
         </div>

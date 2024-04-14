@@ -101,7 +101,33 @@
     width: 100%; /* 그래프의 너비를 최대로 확장 */
     max-width: 1200px; /* 최대 너비 제한을 늘림 */
 }
+      .graph-container {
+    display: flex;
+    flex-direction: column; /* 그래프를 수직으로 쌓음 */
+    align-items: center; /* 중앙 정렬 */
+    margin-top: 20px;
+    background-color: #f0f0f0; /* 각 그래프의 배경만 옅은 회색 */
+    width: 100%; /* 그래프의 너비를 최대로 확장 */
+}
+
+.graph {
+    padding: 20px;
+    width: 100%; /* 그래프의 너비를 최대로 확장 */
+    max-width: 1200px; /* 최대 너비 제한을 늘림 */
+    margin-bottom: 40px; /* 그래프 사이 간격을 늘림 */
+}
+
+.gallery figure, .graph-container figure {
+    max-width: 80%; /* 이미지의 최대 너비를 확장 */
+    margin: auto; /* 가운데 정렬 */
+}
+
+figure img {
+    width: 100%; /* 이미지 너비를 figure의 너비에 맞춤 */
+    height: auto; /* 이미지 높이 자동 조절 */
+}
       </style>
+  
 </head>
   
 <body>

@@ -135,7 +135,7 @@ figure img {
 
 .custom-caption {
     margin-top: 20px; /* 캡션의 위쪽 마진을 20px로 설정하여 간격 추가 */
-    font-size: 18px; /* 선택적으로 캡션의 폰트 크기 조정 */
+    font-size: 25px; /* 선택적으로 캡션의 폰트 크기 조정 */
     text-align: center; /* 캡션을 중앙 정렬 */
 }
           hr {
@@ -230,8 +230,8 @@ annualized Sharpe ratios of <span class="handwriting">l</span><sub class="subscr
 regularized maximum Sharpe ratio portfolio strategy. The strategy
 varies based on the number of components from PCA, RP-PCA, and IPCA estimated covariance matrix,
 and different regularization strength parameters, λ1 and λ2. In all the cases, we use the maximum Sharpe
-ratio portfolio estimated based on the last 20 years of data with short-selling constraint ϑ = 0.2 and no
-additional constraints.
+ratio portfolio estimated <span text-align: left>based on the last 20 years of data with short-selling constraint ϑ = 0.2 and no
+additional constraints.</span>
               </figcaption>
           </figure>
       </div>
@@ -249,7 +249,10 @@ additional constraints.
                 <h2> This is underwater PCA</h2>
                 <p>empty</p>
                 <img class="custom-image" src="static/images/paper/underwaterpca.png" alt="Underwater PCA">
-                <figcaption class="custom-caption">Underwater: PCA & max SR + l<sub>1</sub> + l<sub>2</sub><sup>2</sup></figcaption>
+                <figcaption class="custom-caption">Underwater: PCA & max SR +               
+                  <span class="handwriting">l</span><sub class="subscript">1</sub> + 
+                  <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
+                </figcaption>
             </figure>
         </div>
         <div class="graph">
@@ -257,7 +260,10 @@ additional constraints.
                 <h2> This is Monthly Return</h2>
                 <p>empty</p>
                 <img class="custom-image" src="static/images/paper/monthly ret.png" alt="Monthly Return">
-                <figcaption class="custom-caption">Monthly Ret.: PCA max SR + l<sub>1</sub> + l<sub>2</sub><sup>2</sup></figcaption>
+                <figcaption class="custom-caption">Monthly Ret.: PCA max SR +               
+                  <span class="handwriting">l</span><sub class="subscript">1</sub> + 
+                  <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
+                </figcaption>
             </figure>
         </div>
     </div>

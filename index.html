@@ -135,7 +135,7 @@ figure img {
 
 .custom-caption {
     margin-top: 20px; /* 캡션의 위쪽 마진을 20px로 설정하여 간격 추가 */
-    font-size: 15px; /* 선택적으로 캡션의 폰트 크기 조정 */
+    font-size: 19px; /* 선택적으로 캡션의 폰트 크기 조정 */
     text-align: center; /* 캡션을 중앙 정렬 */
 }
 .custom-caption1 {
@@ -243,12 +243,12 @@ additional constraints.</span>
   </div>
 
  <section class="section" background-color: lightgrey;>
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop" background-color: lightgrey;>
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+    <div class="columns is-centered has-text-centered" background-color: lightgrey;>
+      <div class="column is-four-fifths" background-color: lightgrey;>
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+        <div class="content has-text-justified" background-color: lightgrey;>
           <p>
 We introduce a unified framework for rapid, large-scale portfolio optimization that incorporates both shrinkage and regularization techniques. This framework addresses
 multiple objectives, including minimum variance, mean-variance, and the maximum Sharpe ratio, and also adapts to various portfolio weight constraints. For each optimization scenario, we detail the translation into the corresponding quadratic programming (QP) problem and then integrate these solutions into a new open-source Python
@@ -256,7 +256,7 @@ library. Using 50 years of return data from US mid to large-sized companies, and
 include the sample covariance matrix, linear and nonlinear shrinkage estimators, and
 factor portfolios based on Asset Pricing (AP) Trees, Principal Component Analysis (PCA), Risk Premium PCA (RP-PCA), and Instrumented PCA (IPCA). Our findings
 emphasize that AP-Trees and PCA-based factor models consistently outperform all other approaches in out-of-sample portfolio performance. Finally, we develop new <span class="handwriting">l</span><sub class="subscript">1</sub> + <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup> regularizations of factor portfolio norms which not only elevate the portfolio
-performance of AP-Trees and PCA-based factor models but they have a potential to reduce an excessive turnover and transaction costs often associated with these models
+performance of AP-Trees and PCA-based factor models but they have a potential to reduce an excessive turnover and transaction costs often associated with these models.
           </p>
         </div>
       </div>
@@ -267,7 +267,9 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
 
 
   
-  <hr>
+  <hr     border: none;         /* 기본 테두리 제거 */
+    height: 2px;          /* 선의 두께 */
+    background-color: #ccc; /* 옅은 회색 */>
 
 
 
@@ -298,30 +300,32 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
         </div>
     </div>
 
-  <hr>
+  <hr    border: none;         /* 기본 테두리 제거 */
+    height: 2px;          /* 선의 두께 */
+    background-color: #ccc; /* 옅은 회색 */>
 
 
     <div class="gallery">
         <figure class="small">
             <img src="static/images/paper/EOY Returns.png" alt="Chart 1">
-            <figcaption>Chart 1 Description</figcaption>
+            <figcaption>EOY Returns vs Benchmark</figcaption>
         </figure>
         <!-- 추가 이미지 및 캡션... -->
         <figure class="small">
             <img src="static/images/paper/Distribution of Monthly Returns.png" alt="Chart 5">
-            <figcaption>Chart 5 Description</figcaption>
+            <figcaption>Distribution of Monthly Returns</figcaption>
         </figure>
         <figure class="small">
             <img src="static/images/paper/rolling sharpe.png" alt="Chart 5">
-            <figcaption>Chart 5 Description</figcaption>
+            <figcaption>Rolling Sharpe (6-Months)</figcaption>
         </figure>
         <figure class="small">
             <img src="static/images/paper/Rolling beta.png" alt="Chart 5">
-            <figcaption>Chart 5 Description</figcaption>
+            <figcaption>Rolling Beta to Benchmark</figcaption>
         </figure>
         <figure class="small">
             <img src="static/images/paper/rolling_vol.png" alt="Chart 5">
-            <figcaption>Chart 5 Description</figcaption>
+            <figcaption>Rolling Volatility (6-Months)</figcaption>
         </figure>
     </div>
 

@@ -116,6 +116,25 @@
     max-width: 1200px; /* 최대 너비 제한을 늘림 */
     margin-bottom: 40px; /* 그래프 사이 간격을 늘림 */
 }
+.custom-graph {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Make figure cover the entire parent */
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-graph img {
+    width: 100%; /* Ensure the image covers the width */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 100%; /* Ensures the image does not exceed the figure height */
+}
+  
 
 .gallery figure, .graph-container figure {
     max-width: 80%; /* 이미지의 최대 너비를 확장 */
@@ -366,7 +385,7 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
   
   <div class="graph-container">
       <div class="graph">
-          <figure>
+          <figure class="custom-graph">
             <img src="static/images/paper/performance table.png" alt="Heatmap">
               <figcaption>Monthly Ret.: PCA max 
               <span class="handwriting">l</span><sub class="subscript">1</sub> + 

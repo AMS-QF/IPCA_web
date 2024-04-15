@@ -135,6 +135,11 @@ figure img {
 
 .custom-caption {
     margin-top: 20px; /* 캡션의 위쪽 마진을 20px로 설정하여 간격 추가 */
+    font-size: 15px; /* 선택적으로 캡션의 폰트 크기 조정 */
+    text-align: center; /* 캡션을 중앙 정렬 */
+}
+.custom-caption1 {
+    margin-top: 20px; /* 캡션의 위쪽 마진을 20px로 설정하여 간격 추가 */
     font-size: 25px; /* 선택적으로 캡션의 폰트 크기 조정 */
     text-align: center; /* 캡션을 중앙 정렬 */
 }
@@ -236,6 +241,31 @@ additional constraints.</span>
           </figure>
       </div>
   </div>
+
+ <section class="section" background-color: lightgrey;>
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+We introduce a unified framework for rapid, large-scale portfolio optimization that incorporates both shrinkage and regularization techniques. This framework addresses
+multiple objectives, including minimum variance, mean-variance, and the maximum Sharpe ratio, and also adapts to various portfolio weight constraints. For each optimization scenario, we detail the translation into the corresponding quadratic programming (QP) problem and then integrate these solutions into a new open-source Python
+library. Using 50 years of return data from US mid to large-sized companies, and 33 distinct firm-specific characteristics, we utilize our framework to assess the out-of-sample monthly rebalanced portfolio performance of widely-adopted covariance matrix estimators and factor models, examining both daily and monthly returns. These estimators
+include the sample covariance matrix, linear and nonlinear shrinkage estimators, and
+factor portfolios based on Asset Pricing (AP) Trees, Principal Component Analysis (PCA), Risk Premium PCA (RP-PCA), and Instrumented PCA (IPCA). Our findings
+emphasize that AP-Trees and PCA-based factor models consistently outperform all other approaches in out-of-sample portfolio performance. Finally, we develop new <span class="handwriting">l</span><sub class="subscript">1</sub> + <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup> regularizations of factor portfolio norms which not only elevate the portfolio
+performance of AP-Trees and PCA-based factor models but they have a potential to reduce an excessive turnover and transaction costs often associated with these models
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section> 
+
+
   
   <hr>
 
@@ -249,7 +279,7 @@ additional constraints.</span>
                 <h2> This is underwater PCA</h2>
                 <p>empty</p>
                 <img class="custom-image" src="static/images/paper/underwaterpca.png" alt="Underwater PCA">
-                <figcaption class="custom-caption">Underwater: PCA & max SR +               
+                <figcaption class="custom-caption1">Underwater: PCA & max SR +               
                   <span class="handwriting">l</span><sub class="subscript">1</sub> + 
                   <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
                 </figcaption>
@@ -260,7 +290,7 @@ additional constraints.</span>
                 <h2> This is Monthly Return</h2>
                 <p>empty</p>
                 <img class="custom-image" src="static/images/paper/monthly ret.png" alt="Monthly Return">
-                <figcaption class="custom-caption">Monthly Ret.: PCA max SR +               
+                <figcaption class="custom-caption1">Monthly Ret.: PCA max SR +               
                   <span class="handwriting">l</span><sub class="subscript">1</sub> + 
                   <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
                 </figcaption>
@@ -327,28 +357,7 @@ additional constraints.</span>
     </div>
   </div>
 </section>
-<section class="section" background-color: lightgrey;>
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-We introduce a unified framework for rapid, large-scale portfolio optimization that incorporates both shrinkage and regularization techniques. This framework addresses
-multiple objectives, including minimum variance, mean-variance, and the maximum Sharpe ratio, and also adapts to various portfolio weight constraints. For each optimization scenario, we detail the translation into the corresponding quadratic programming (QP) problem and then integrate these solutions into a new open-source Python
-library. Using 50 years of return data from US mid to large-sized companies, and 33 distinct firm-specific characteristics, we utilize our framework to assess the out-of-sample monthly rebalanced portfolio performance of widely-adopted covariance matrix estimators and factor models, examining both daily and monthly returns. These estimators
-include the sample covariance matrix, linear and nonlinear shrinkage estimators, and
-factor portfolios based on Asset Pricing (AP) Trees, Principal Component Analysis (PCA), Risk Premium PCA (RP-PCA), and Instrumented PCA (IPCA). Our findings
-emphasize that AP-Trees and PCA-based factor models consistently outperform all other approaches in out-of-sample portfolio performance. Finally, we develop new <span class="handwriting">l</span><sub class="subscript">1</sub> + <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup> regularizations of factor portfolio norms which not only elevate the portfolio
-performance of AP-Trees and PCA-based factor models but they have a potential to reduce an excessive turnover and transaction costs often associated with these models
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
+
 
   
   <div class="graph-container">

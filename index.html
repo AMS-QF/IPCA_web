@@ -37,70 +37,7 @@
     <!-- 필기체 글꼴을 불러옵니다. -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     
-  <style>
-    /* 일반 이미지 및 텍스트 스타일 설정 */
-    figure {
-        margin: auto; /* 좌우 자동 마진을 통해 가운데 정렬 */
-        text-align: center; /* 텍스트를 중앙 정렬 */
-        max-width: 100%; /* 이미지가 컨테이너보다 크지 않도록 최대 너비 설정 */
-        height: auto; /* 이미지의 높이를 자동으로 조절하여 비율 유지 */
-    }
-    img {
-        display: block; /* 이미지를 블록 요소로 설정 */
-        margin: 0 auto; /* 상하 마진 0, 좌우 자동 마진을 통해 가운데 정렬 */
-        max-width: 100%; /* 이미지가 컨테이너보다 크지 않도록 최대 너비 설정 */
-        height: auto; /* 이미지의 높이를 자동으로 조절하여 비율 유지 */
-    }
-    figcaption {
-        font-family: 'Merriweather', serif; /* 일반 텍스트에 사용될 글꼴 */
-        text-align: center;
-        font-size: 20px;
-    }
-    .handwriting {
-        font-family: 'Dancing Script', cursive; /* 필기체 스타일을 적용할 클래스 */
-    }
-    .subscript {
-        vertical-align: sub;
-        font-size: smaller;
-    }
-    .superscript {
-        vertical-align: super;
-        font-size: smaller;
-    }
-    .small { 
-        font-size: 10px;
-    }
 
-    /* 갤러리와 그래프 컨테이너 설정 */
-    .gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2개의 열 */
-        grid-gap: 10px; /* 그리드 간격 */
-        margin-bottom: 20px; /* 여백 추가 */
-    }
-    .gallery figure {
-        margin: auto; /* 가운데 정렬 */
-    }
-    .gallery figure:nth-child(5) {
-        grid-column: 1 / span 2; /* 두 열을 차지하도록 설정 */
-        justify-self: center; /* 가운데 정렬 */
-        max-width: 50%; /* 다른 요소와 동일한 크기로 설정 */
-    }
-
-    .graph-container {
-        display: flex;
-        flex-direction: column; /* 그래프를 수직으로 쌓음 */
-        align-items: center; /* 중앙 정렬 */
-        margin-top: 20px;
-        width: 100%; /* 그래프의 너비를 최대로 확장 */
-    }
-    .graph {
-        padding: 20px;
-        width: 100%; /* 그래프의 너비를 최대로 확장 */
-        max-width: 1200px; /* 최대 너비 제한을 늘림 */
-        margin-bottom: 40px; /* 그래프 사이 간격을 늘림 */
-    }
-</style>
 <style>
           figure {
             margin: auto; /* 좌우 자동 마진을 통해 가운데 정렬 */
@@ -189,6 +126,18 @@ figure img {
     width: 100%; /* 이미지 너비를 figure의 너비에 맞춤 */
     height: auto; /* 이미지 높이 자동 조절 */
 }
+.custom-image { 
+    width: 70%; /* 이미지의 너비를 70%로 조정 */
+    height: auto; /* 이미지의 높이를 자동으로 조절하여 비율 유지 */
+    display: block;
+    margin: auto; /* 이미지를 중앙 정렬 */
+}
+
+.custom-caption {
+    margin-top: 20px; /* 캡션의 위쪽 마진을 20px로 설정하여 간격 추가 */
+    font-size: 18px; /* 선택적으로 캡션의 폰트 크기 조정 */
+    text-align: center; /* 캡션을 중앙 정렬 */
+}
       </style>
   
 </head>
@@ -269,7 +218,7 @@ figure img {
       <div class="graph">
           <figure>
             <img src="static/images/paper/sharpe ratio grid heatmap.png" alt="Heatmap">
-              <figcaption>Monthly Ret.: PCA max 
+              <figcaption class="custom-caption">Monthly Ret.: PCA max 
               <span class="handwriting">l</span><sub class="subscript">1</sub> + 
               <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
               </figcaption>
@@ -286,14 +235,14 @@ figure img {
     <div class="graph-container">
         <div class="graph">
             <figure>
-                <img src="static/images/paper/underwaterpca.png" alt="Underwater PCA">
-                <figcaption>Underwater: PCA & max SR + l<sub>1</sub> + l<sub>2</sub><sup>2</sup></figcaption>
+                <img class="custom-image" src="static/images/paper/underwaterpca.png" alt="Underwater PCA">
+                <figcaption class="custom-caption">Underwater: PCA & max SR + l<sub>1</sub> + l<sub>2</sub><sup>2</sup></figcaption>
             </figure>
         </div>
         <div class="graph">
             <figure>
-                <img src="static/images/paper/monthly ret.png" alt="Monthly Return">
-                <figcaption>Monthly Ret.: PCA max SR + l<sub>1</sub> + l<sub>2</sub><sup>2</sup></figcaption>
+                <img class="custom-image" src="static/images/paper/monthly ret.png" alt="Monthly Return">
+                <figcaption class="custom-caption">Monthly Ret.: PCA max SR + l<sub>1</sub> + l<sub>2</sub><sup>2</sup></figcaption>
             </figure>
         </div>
     </div>

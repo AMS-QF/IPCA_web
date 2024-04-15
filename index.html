@@ -229,19 +229,54 @@ figure img {
       <div class="graph">
           <figure>
             <img src="static/images/paper/sharpe ratio grid heatmap.png" alt="Heatmap">
-              <figcaption class="custom-caption" text-align: left>: Fifteen heatmaps of out-of-sample performance gains from monthly rebalanced portfolio in the
+              <figcaption class="custom-caption">: Fifteen heatmaps of out-of-sample performance gains from monthly rebalanced portfolio in the
 annualized Sharpe ratios of <span class="handwriting">l</span><sub class="subscript">1</sub> + 
                 <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
 regularized maximum Sharpe ratio portfolio strategy. The strategy
 varies based on the number of components from PCA, RP-PCA, and IPCA estimated covariance matrix,
 and different regularization strength parameters, λ1 and λ2. In all the cases, we use the maximum Sharpe
-ratio portfolio estimated <span text-align: left>based on the last 20 years of data with short-selling constraint ϑ = 0.2 and no
-additional constraints.</span>
+ratio portfolio estimated based on the last 20 years of data with short-selling constraint ϑ = 0.2 and no
+additional constraints.
               </figcaption>
           </figure>
       </div>
   </div>
 
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="container is-max-desktop" background-color: lightgrey;>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered" background-color: lightgrey;>
+      <div class="column is-four-fifths" background-color: lightgrey;>
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified" background-color: lightgrey;>
+          <p>
+We introduce a unified framework for rapid, large-scale portfolio optimization that incorporates both shrinkage and regularization techniques. This framework addresses
+multiple objectives, including minimum variance, mean-variance, and the maximum Sharpe ratio, and also adapts to various portfolio weight constraints. For each optimization scenario, we detail the translation into the corresponding quadratic programming (QP) problem and then integrate these solutions into a new open-source Python
+library. Using 50 years of return data from US mid to large-sized companies, and 33 distinct firm-specific characteristics, we utilize our framework to assess the out-of-sample monthly rebalanced portfolio performance of widely-adopted covariance matrix estimators and factor models, examining both daily and monthly returns. These estimators
+include the sample covariance matrix, linear and nonlinear shrinkage estimators, and
+factor portfolios based on Asset Pricing (AP) Trees, Principal Component Analysis (PCA), Risk Premium PCA (RP-PCA), and Instrumented PCA (IPCA). Our findings
+emphasize that AP-Trees and PCA-based factor models consistently outperform all other approaches in out-of-sample portfolio performance. Finally, we develop new <span class="handwriting">l</span><sub class="subscript">1</sub> + <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup> regularizations of factor portfolio norms which not only elevate the portfolio
+performance of AP-Trees and PCA-based factor models but they have a potential to reduce an excessive turnover and transaction costs often associated with these models.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  
  <section class="section" background-color: lightgrey;>
   <div class="container is-max-desktop" background-color: lightgrey;>
     <!-- Abstract. -->
@@ -330,37 +365,6 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
     </div>
 
 
-
-  
-
-  
-  
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <figure>
-            <img src="static/images/paper/underwaterpca.png" alt="UnderwaterPCA">
-            <figcaption>Underwater: PCA & max SR +
-                <span class="handwriting">l</span><sub class="subscript">1</sub> + 
-                <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="item item-chair-tp">
-          <figure>
-            <img src="static/images/paper/monthly ret.png" alt="Monthly return">
-            <figcaption>Monthly Ret.: PCA max 
-                <span class="handwriting">l</span><sub class="subscript">1</sub> + 
-                <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
   

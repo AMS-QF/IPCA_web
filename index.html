@@ -234,7 +234,7 @@ annualized Sharpe ratios of <span class="handwriting">l</span><sub class="subscr
                 <span class="handwriting">l</span><sub class="subscript">2</sub><sup class="superscript">2</sup>
 regularized maximum Sharpe ratio portfolio strategy. The strategy
 varies based on the number of components from PCA, RP-PCA, and IPCA estimated covariance matrix,
-and different regularization strength parameters, λ1 and λ2. In all the cases, we use the maximum Sharpe
+and different regularization strength parameters, λ<sub class="subscript">1</sub> and λ<sup class="superscript">2</sup>. In all the cases, we use the maximum Sharpe
 ratio portfolio estimated based on the last 20 years of data with short-selling constraint ϑ = 0.2 and no
 additional constraints.
               </figcaption>
@@ -254,7 +254,7 @@ additional constraints.
       <div class="column is-four-fifths" background-color: lightgrey;>
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified" background-color: lightgrey;>
-          <p>
+          <p background-color: lightgrey;>
 We introduce a unified framework for rapid, large-scale portfolio optimization that incorporates both shrinkage and regularization techniques. This framework addresses
 multiple objectives, including minimum variance, mean-variance, and the maximum Sharpe ratio, and also adapts to various portfolio weight constraints. For each optimization scenario, we detail the translation into the corresponding quadratic programming (QP) problem and then integrate these solutions into a new open-source Python
 library. Using 50 years of return data from US mid to large-sized companies, and 33 distinct firm-specific characteristics, we utilize our framework to assess the out-of-sample monthly rebalanced portfolio performance of widely-adopted covariance matrix estimators and factor models, examining both daily and monthly returns. These estimators

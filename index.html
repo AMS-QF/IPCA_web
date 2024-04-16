@@ -151,7 +151,7 @@ figure img {
 .image-container img {
     width: 100%; /* 이미지 너비를 figure의 너비와 동일하게 설정 */
     height: 100%; /* 이미지 높이를 figure의 높이와 동일하게 설정 */
-    object-fit: cover; /* 이미지 비율을 유지하면서 figure 영역을 모두 채움 */
+    object-fit: contain; /* 이미지 비율을 유지하면서 figure 영역을 모두 채움 */
     position: absolute; /* 이미지를 figure 내에서 절대 위치로 설정 */
     top: 50%; /* 상위에서 50% 위치 */
     left: 50%; /* 좌측에서 50% 위치 */
@@ -375,91 +375,6 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
   <figcaption>This is a caption for the image.</figcaption>
 </figure>
 
-
-<table border="1" style="width: 100%; border-collapse: collapse;">
-    <thead>
-        <tr>
-            <th></th>
-            <th>Market S&amp;P 500</th>
-            <th>Sample Cov Min Var</th>
-            <th>L&amp;W-NLS Min Var</th>
-            <th>AP-Trees Max SR+l<sub>1</sub>+l<sub>2</sub><sup>2</sup></th>
-            <th>PCA Max SR+l<sub>1</sub>+l<sub>2</sub><sup>2</sup></th>
-            <th>RP-PCA Max SR+l<sub>1</sub>+l<sub>2</sub><sup>2</sup></th>
-            <th>IPCA Max SR</th>
-            <th>IPCA Max SR+l<sub>1</sub>+l<sub>2</sub><sup>2</sup></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Start Period</td>
-            <td>2005-02-02</td>
-            <td>2005-02-02</td>
-            <td>2005-02-02</td>
-            <td>2005-01-31</td>
-            <td>2005-01-31</td>
-            <td>2005-01-31</td>
-            <td>2005-01-31</td>
-            <td>2005-01-31</td>
-        </tr>
-        <tr>
-            <td>End Period</td>
-            <td>2022-12-30</td>
-            <td>2022-12-30</td>
-            <td>2022-12-30</td>
-            <td>2022-12-31</td>
-            <td>2022-12-31</td>
-            <td>2022-12-31</td>
-            <td>2022-12-31</td>
-            <td>2022-12-31</td>
-        </tr>
-        <tr>
-            <td>Risk-Free Rate</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-            <td>0</td>
-        </tr>
-        <tr>
-            <td>Time in Market</td>
-            <td>1.0</td>
-            <td>1.0</td>
-            <td>1.0</td>
-            <td>1.0</td>
-            <td>1.0</td>
-            <td>1.0</td>
-            <td>1.0</td>
-            <td>1.0</td>
-        </tr>
-        <tr>
-            <td>CAGR%</td>
-            <td>0.07</td>
-            <td>0.08</td>
-            <td>0.08</td>
-            <td>0.31</td>
-            <td>0.35</td>
-            <td>0.59</td>
-            <td>1.24</td>
-            <td><strong>2.1</strong></td>
-        </tr>
-        <tr>
-            <td>Sharpe</td>
-            <td>0.5</td>
-            <td>0.67</td>
-            <td>0.73</td>
-            <td>1.8</td>
-            <td>1.85</td>
-            <td>3.4</td>
-            <td>3.74</td>
-            <td><strong>4.91</strong></td>
-        </tr>
-        <!-- Add additional rows as needed -->
-    </tbody>
-</table>
 
 
 

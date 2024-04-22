@@ -175,6 +175,32 @@ figure img {
         max-width: 100%; /* Ensures the image does not overflow */
         object-fit: cover;
     }
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .grid-column {
+        flex: 50%; /* Each column takes 50% of the width to make it 2 columns */
+        padding: 10px;
+    }
+    .grid-figure {
+        background-color: lightgrey; /* Visualize the figure area */
+        height: 300px; /* Example height for each figure */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .image-full {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the image covers the figure, adjusting size as needed */
+    }
+      
       </style>
 
 
@@ -367,7 +393,24 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
     </div>
 </div>
 
-
+<div class="grid-container">
+    <div class="grid-column">
+        <figure class="grid-figure">
+            <img class="image-full" src="path_to_image1.jpg" alt="Figure 1">
+        </figure>
+        <figure class="grid-figure">
+            <img class="image-full" src="path_to_image2.jpg" alt="Figure 2">
+        </figure>
+    </div>
+    <div class="grid-column">
+        <figure class="grid-figure">
+            <img class="image-full" src="path_to_image3.jpg" alt="Figure 3">
+        </figure>
+        <figure class="grid-figure">
+            <img class="image-full" src="path_to_image4.jpg" alt="Figure 4">
+        </figure>
+    </div>
+</div>
   
     <div class="graph-container">
         <div class="graph">

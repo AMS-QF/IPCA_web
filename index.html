@@ -68,6 +68,12 @@
           grid-gap: 10px; /* 그리드 간격 */
           margin-bottom: 20px; /* 여백 추가 */
         }
+              .gallery2 {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr); /* 4개의 열 */
+          grid-gap: 10px; /* 그리드 간격 */
+          margin-bottom: 20px; /* 여백 추가 */
+        }
       
         .gallery figure {
           margin: auto; /* 가운데 정렬 */
@@ -144,7 +150,29 @@ figure img {
     height: 100%;
     object-fit: cover;  /* 이미지가 컨테이너를 꽉 채우도록 하되, 비율은 유지 */
 }
-
+    .container11 {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .column11 {
+        flex: 25%; /* Each column takes 25% of the width to make it 4 columns */
+        padding: 10px;
+    }
+    .figure11 {
+        width: 100%;
+        margin-bottom: 20px;
+        background-color: lightgrey; /* Background color to visualize the figures */
+        height: 200px; /* Example height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+    .img11 {
+        max-height: 100%; /* Ensures the image fits within the figure */
+        max-width: 100%; /* Ensures the image does not overflow */
+    }
       </style>
 
 
@@ -302,7 +330,40 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
     height: 2px;          /* 선의 두께 */
     background-color: #ccc; /* 옅은 회색 */>
 
-
+<div class="container11">
+    <div class="column11">
+        <figure class="figure11">
+            <img class="img11" src="static/images/paper/RPPCA without regul graph.png" alt="Figure 7">
+        </figure>
+        <figure class="figure11">
+            <img class="img11" src="static/images/paper/RPPCA without regul fig.png" alt="Figure 7">
+        </figure>
+    </div>
+    <div class="column11">
+        <figure class="figure11">
+            <img class="img11" src="static/images/paper/RPPCA with regul graph.png" alt="Figure 7">
+        </figure>
+        <figure class="figure11">
+            <img class="img11" src="static/images/paper/RPPCA with regul fig.png" alt="Figure 7">
+        </figure>
+    </div>
+    <div class="column11">
+        <figure class="figure11">
+            <img class="img11" src="static/images/paper/IPCA without regul graph.png" alt="Figure 7">
+        </figure>
+        <figure class="figure11">
+            <img class="img11" src="static/images/paper/IPCA without regul fig.png" alt="Figure 7">
+        </figure>
+    </div>
+    <div class="column11">
+        <figure class="figure11">
+            <img class="img11" src="static/images/paper/underwater_revised.jpeg" alt="Figure 7">
+        </figure>
+        <figure class="figure11">
+            <img class="static/images/paper/monthly_ret.jpeg" alt="Figure 7">
+        </figure>
+    </div>
+</div>
 
 
   

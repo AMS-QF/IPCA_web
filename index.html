@@ -196,9 +196,13 @@ figure img {
         overflow: hidden;
     }
     .image-full {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;; /* Ensures the image covers the figure, adjusting size as needed */
+            position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* 이미지가 컨테이너를 꽉 채우도록 하되, 비율은 유지 */
+}
     }
       
       </style>

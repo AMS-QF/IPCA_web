@@ -160,17 +160,20 @@ figure img {
         padding: 10px;
     }
     .figure11 {
-        width: 100%;
-        margin-bottom: 20px;
-        height: 200px; /* Example height */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 200px; /* Set a fixed height for the figure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    overflow: hidden; /* Adds this to prevent any overflow */
+    position: relative; /* Ensures the image can be properly positioned */
     }
     .img11 {
         max-height: 100%; /* Ensures the image fits within the figure */
         max-width: 100%; /* Ensures the image does not overflow */
+        object-fit: cover;
     }
       </style>
 

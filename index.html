@@ -186,7 +186,6 @@ figure img {
         padding: 10px;
     }
     .grid-figure {
-        background-color: lightgrey; /* Visualize the figure area */
         height: 300px; /* Example height for each figure */
         display: flex;
         justify-content: center;
@@ -196,12 +195,11 @@ figure img {
         overflow: hidden;
     }
     .image-full {
-            position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* 이미지가 컨테이너를 꽉 채우도록 하되, 비율은 유지 */
+    object-fit: contain;  /* 이미지가 컨테이너를 꽉 채우도록 하되, 비율은 유지 */
 }
     }
       

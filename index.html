@@ -159,17 +159,18 @@ figure img {
         flex: 25%; /* Each column takes 25% of the width to make it 4 columns */
         padding: 10px;
     }
-    .figure11 {
+.figure11 {
     width: 100%;
     margin-bottom: 20px;
     height: auto; /* Set a fixed height for the figure */
     display: flex;
+    flex-direction: column; /* Children (img and figcaption) stacked vertically */
     justify-content: center;
     align-items: center;
     font-size: 24px;
     overflow: hidden; /* Adds this to prevent any overflow */
     position: relative; /* Ensures the image can be properly positioned */
-    }
+}
     .figure12 {
     width: 100%;
     margin-bottom: 20px;

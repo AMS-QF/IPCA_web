@@ -162,6 +162,17 @@ figure img {
     .figure11 {
     width: 100%;
     margin-bottom: 20px;
+    height: auto; /* Set a fixed height for the figure */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    overflow: hidden; /* Adds this to prevent any overflow */
+    position: relative; /* Ensures the image can be properly positioned */
+    }
+    .figure12 {
+    width: 100%;
+    margin-bottom: 20px;
     height: 200px; /* Set a fixed height for the figure */
     display: flex;
     justify-content: center;
@@ -170,6 +181,7 @@ figure img {
     overflow: hidden; /* Adds this to prevent any overflow */
     position: relative; /* Ensures the image can be properly positioned */
     }
+      
     .img11 {
         max-height: 100%; /* Ensures the image fits within the figure */
         max-width: 100%; /* Ensures the image does not overflow */
@@ -372,10 +384,10 @@ performance of AP-Trees and PCA-based factor models but they have a potential to
 <div class="container11">
     <div class="column11">
         <figure class="figure11">
-            <img class="img11" src="static/images/paper/RPPCA without regul graph.png" alt="Figure 7">
+            <img class="img11" src="static/images/paper/RPpca-graph-without.png" alt="Figure 7">
         </figure>
         <figure class="figure11">
-            <img class="img11" src="static/images/paper/RPPCA without regul fig.png" alt="Figure 7">
+            <img class="img11" src="static/images/paper/RPpca-figure-without.png" alt="Figure 7">
         </figure>
     </div>
     <div class="column11">
